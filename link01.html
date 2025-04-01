@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/eze.jpg" type="image/x-icon">
+    <title>EP cell</title>
+    <style>
+        /* Estilo para o vídeo de fundo */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Faz o vídeo cobrir a tela inteira */
+            z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+        }
+
+        /* Estilo para o conteúdo do site */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: rgba(247, 247, 247, 0.9); /* Cor de fundo com opacidade */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo com opacidade */
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 40px 20px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .bio {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .links a {
+            display: block;
+            background-color: #000000;
+            color: white;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            transition: background-color 0.3s;
+        }
+
+        .links a:hover {
+            background-color: #e5ff00;
+        }
+
+        .footer {
+            font-size: 12px;
+            color: #e5ff00;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Vídeo de fundo -->
+    <video class="video-background" autoplay muted loop>
+        <source src="eze001.mp4" type="video/mp4">
+        Seu navegador não suporta o vídeo.
+    </video>
+
+    <div class="container">
+        <!-- Imagem de perfil -->
+        <img src="img/eze.jpg" alt="Foto de perfil" class="avatar">
+
+        <!-- Nome -->
+        <div class="name">EP cell</div>
+
+        <!-- Links -->
+        <div class="links">
+            <a href="https://www.instagram.com/e.p__cell/" target="_blank">
+                <button style="background-color: black; color: white; border: 2px solid yellow; padding: 10px 20px; border-radius: 5px;">
+                    Instagram
+                </button>
+            </a>
+            <a href="https://wa.me/5519997087628" target="_blank">
+                <button style="background-color: black; color: white; border: 2px solid yellow; padding: 10px 20px; border-radius: 5px;">
+                    whatsapp
+                </button>
+            </a>
+            <a href="https://www.facebook.com/E.PCELL26" target="_blank">
+                <button style="background-color: black; color: white; border: 2px solid yellow; padding: 10px 20px; border-radius: 5px;">
+                    Facebook
+                </button>
+            </a>
+            <a href="https://www.instagram.com/e.p__cell/" target="_blank">
+                <button style="background-color: black; color: white; border: 2px solid yellow; padding: 10px 20px; border-radius: 5px;">
+                    Site (em breve)
+                </button>
+            </a>
+        </div>
+
+        <!-- Rodapé -->
+        <div class="footer">Criado com 💻 por [ezequiel]</div>
+    </div>
+
+</body>
+</html>
